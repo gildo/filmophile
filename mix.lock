@@ -1,0 +1,6 @@
+%{"benchwarmer": {:git, "git://github.com/mroth/benchwarmer.git", "87b4ff4364e269513184464a913a860f6da77831", []},
+  "hackney": {:hex, :hackney, "1.3.2"},
+  "httpoison": {:hex, :httpoison, "0.7.3"},
+  "idna": {:hex, :idna, "1.0.2"},
+  "poison": {:hex, :poison, "1.5.0"},
+  "ssl_verify_hostname": {:hex, :ssl_verify_hostname, "1.0.5"}}
