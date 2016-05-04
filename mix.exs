@@ -27,6 +27,6 @@ defmodule Filmophile.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:httpoison, "~> 0.7.3"}, {:poison, "~> 1.5"}, {:benchwarmer, github: "mroth/benchwarmer"}]
+    [{:httpoison, "~> 0.8"}, {:poison, "~> 1.5"}, {:benchwarmer, github: "mroth/benchwarmer"}]
   end
 end
