@@ -20,6 +20,7 @@ defmodule Filmophile.Base do
     "api_key=" <> System.get_env("TMDB_KEY")
   end
 
+
 end
 
 defmodule Filmophile do
@@ -29,7 +30,19 @@ defmodule Filmophile do
     Base.get!("/movie/#{id}?")
   end
 
+  def next_page(result) do
+    if result.body[:results] == [] do
+      nil
+    else
+      result.body[:page] + 1
+    end
+  end
+
   def popular_movies(page \\ 1) do
     Base.get!("/movie/popular?page=#{page}&")
+  end
+
+  def page(page_number \\ 1) do
+    "&page=" <> page_number
   end
 end
